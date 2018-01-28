@@ -1,0 +1,155 @@
+#body{
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+// 媒体查询
+@media screen and (max-width: 1000px) {
+  #body{
+    width: 100%;
+    margin-top: 1%;
+  }
+  #body_right{
+    display: none;
+  }
+  #body_left{
+    width: 100%;
+  }
+.div1{
+  display: none;
+}
+.header_body_right{
+  clear: both;
+}
+}
+@media screen and (min-width: 1000px) {
+  #body{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+  }
+  #body_left{
+    width: 78%;
+  }
+  .header_body_right{
+    float: right;
+  }
+  #header{
+    height: 51px;
+  }
+}
+// 模板左边块,右边块
+#body_left{
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #fff;
+  height: 100%;
+  float: left;
+}
+#body_right{
+  width: 21%;
+  background: none;
+  height: 1000px;
+  float: right;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+// 置顶
+.meta{
+  margin:0 8px;
+  font-size: 12px;
+  background: #80BD01;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.meta2{
+  background: #e0e0e0;
+  color: #909090;
+}
+//主题详情
+.markdown-text{
+  width: 95%;
+  margin: 0 auto;
+  color: #333;
+  p{
+    //border-bottom: 1px solid #909090;
+    padding: 5px 5px 20px 0px;
+    font-size: 15px;
+    img{
+      width: 100%;
+    }
+  }
+  li{
+    font-size: 14px;
+    line-height: 2em;
+    white-space: pre-wrap;
+    margin-left: 20px;
+  }
+  h2{
+    border-bottom: 1px solid #e0e0e0;
+    margin: 30px 0 15px;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+// 首页图片 公用
+.img{
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+//作者模块 头部
+.title{
+  line-height: 40px;
+  background: #F6F6F6;
+  text-indent: 1em;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+}
+// 创建话题，回复
+.area{
+  .areaA{
+    width: 100%;
+    line-height: 50px;
+    text-indent: 1.5em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  textarea{
+    width: 100%;
+    height: 500px;
+    border: none;
+    text-indent: 2em;
+    outline: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+// 创建话题，回复的按钮
+.but{
+  button{
+    width: 60px;
+    line-height: 35px;
+    background: #0088CC;
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+}
